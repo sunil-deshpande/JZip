@@ -1,6 +1,6 @@
 <project name="zipunzip" default="jar">
 	<target name="compile">
-		<javac srcdir="src" destdir="bin" includeantruntime="false" target="6" source="6">
+		<javac srcdir="src" destdir="bin" includeantruntime="false" target="7" source="7">
 			<classpath>
 				<pathelement path="lib/commons-cli-1.2.jar"/>
 				<pathelement path="lib/commons-io-2.4.jar"/>
