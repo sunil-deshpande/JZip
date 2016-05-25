@@ -63,9 +63,9 @@ public class Unzip {
 				if (zEntry.getMethod() == ZipEntry.DEFLATED) method = "Deflated";
 				if (zEntry.getMethod() == ZipEntry.STORED) method = "Stored";
                 if (!zEntry.isDirectory()) {
-				    System.out.printf("%15d %12s %10s %s\n", zEntry.getSize(), new SimpleDateFormat("MM-dd-yyyy").format(new java.util.Date(zEntry.getTime())), method, destPath + zEntry.getName());
+				    System.out.printf("%15d %12s %-10s %s\n", zEntry.getSize(), new SimpleDateFormat("MM-dd-yyyy").format(new java.util.Date(zEntry.getTime())), method, destPath + zEntry.getName());
                 } else {
-                    System.out.printf("%15s %12s %10s %s\n", "<DIR>", new SimpleDateFormat("MM-dd-yyyy").format(new java.util.Date(zEntry.getTime())), method, destPath + zEntry.getName());
+                    System.out.printf("%15s %12s %-10s %s\n", "<DIR>", new SimpleDateFormat("MM-dd-yyyy").format(new java.util.Date(zEntry.getTime())), method, destPath + zEntry.getName());
                 }
 			    zi.closeEntry();
 			}
