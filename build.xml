@@ -1,0 +1,25 @@
+<project name="zipunzip" default="jar">
+	<target name="compile">
+		<javac srcdir="src" destdir="bin" includeantruntime="false" target="6" source="6">
+			<classpath>
+				<pathelement path="lib/commons-cli-1.2.jar"/>
+				<pathelement path="lib/commons-io-2.4.jar"/>
+			</classpath>
+		</javac>
+	</target>
+	<target name="jar" depends="compile">
+		<jar destfile="JZip.jar" basedir="bin">
+			<zipfileset includes="**/*.class" src="lib/commons-cli-1.2.jar"/>
+			<zipfileset includes="**/*.class" src="lib/commons-io-2.4.jar"/>
+			<manifest>
+				<attribute name="Main-class" value="org.bt.Main"/>
+			</manifest>
+		</jar>
+	</target>
+	<target name="clean">
+		<delete dir="dist"/>
+		<delete dir="bin"/>
+		<mkdir dir="dist"/>
+		<mkdir dir="bin"/>
+	</target>
+</project>
