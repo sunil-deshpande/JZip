@@ -1,3 +1,8 @@
+/**
+ * Main program that processes command line and invokes
+ * related functionality
+ * Last Update: 25-05-2016
+ **/
 package org.bt;
 
 import org.apache.commons.cli.*;
@@ -121,4 +126,4 @@ public class Main {
 		helpFormatter.printHelp(USAGE, HEADER, options, FOOTER);
 	}
 }
-/*--------------------- End of File ----------------------------*/
+/*------------------ End of File ----------------------------------------*/
