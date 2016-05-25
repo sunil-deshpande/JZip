@@ -1,3 +1,7 @@
+/**
+ * Main program that processes command line and invokes
+ * related functionality
+ **/
 package org.bt;
 
 import org.apache.commons.cli.*;
