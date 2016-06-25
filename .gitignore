@@ -2,3 +2,4 @@ JZip.jar
 *.class
 *.zip
 bin
+.git-credentials
