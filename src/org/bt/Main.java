@@ -128,4 +128,4 @@ public class Main {
 		helpFormatter.printHelp(USAGE, HEADER, options, FOOTER);
 	}
 }
-/*----------------------- End of File ----------------------------------------*/
+/*------------------------- End of File ----------------------------------------*/
