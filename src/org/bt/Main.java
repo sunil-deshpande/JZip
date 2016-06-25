@@ -1,8 +1,8 @@
 /**
  *
  * Main program that processes command line and invokes
- * related functionality
- * Last Update: 28-05-2016
+ * related functionality. Trying to use git from Atom
+ * Last Update: 25-06-2016
  *
  **/
 package org.bt;
@@ -19,7 +19,7 @@ public class Main {
 	private static final String USAGE = "JZip.bat [options] files";
 	private static final String HEADER = "Java utility for zipping/unzipping files v0.1";
 	private static final String FOOTER = "Developed by Sunil Deshpande (C) 2015\n";
-	public static void main(String[] args) 
+	public static void main(String[] args)
 	{
 		String zipFileName = null;
 		String fileSeparator = System.getProperty("file.separator");
@@ -128,4 +128,4 @@ public class Main {
 		helpFormatter.printHelp(USAGE, HEADER, options, FOOTER);
 	}
 }
-/*------------------ End of File ----------------------------------------*/
+/*----------------------- End of File ----------------------------------------*/
