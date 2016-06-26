@@ -1,3 +1,9 @@
+/**
+* File: Unzip.java
+* Description: Unzip files and list files in .zip file
+* TODO: Unzip files recursively.
+* Author: Sunil Deshpande
+*/
 package org.bt.zipunzip;
 
 import java.io.FileInputStream;
