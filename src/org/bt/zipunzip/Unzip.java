@@ -1,8 +1,10 @@
 /**
-* File: Unzip.java
+* Author     : Sunil Deshpande
+* File       : Unzip.java
+* Package    : org.bt.zipunzip
+* Class      : Unzip
 * Description: Unzip files and list files in .zip file
 * TODO: Unzip files recursively.
-* Author: Sunil Deshpande
 */
 package org.bt.zipunzip;
 
